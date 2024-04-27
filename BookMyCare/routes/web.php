@@ -55,3 +55,5 @@ Route::get('/run-migration', function(){
     Artisan::call('optimize:clear');
     Artisan::call('migrate');
 });
+
+Route::get('/home-view', [AdminController::class,'homeview']);

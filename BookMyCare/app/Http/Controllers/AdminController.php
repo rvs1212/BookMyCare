@@ -149,4 +149,10 @@ class AdminController extends Controller
 
    return redirect()->back()->with('message','Email send successfully');
    }
+
+   public function homeview(){
+
+      return view('admin.home_view');
+   }
+
 }
